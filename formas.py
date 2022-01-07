@@ -2,10 +2,10 @@ import math
 
 class Formas:
   def areaCirculo(raio):
-    return math.pow(raio, 2) * math.pi()
+    return math.pow(raio, 2) * math.pi
 
   def volumeEsfera(raio):
-    return (4/3) * math.pi() * math.pow(raio, 3)
+    return (4/3) * math.pi * math.pow(raio, 3)
 
   def areaQuadrado(lado):
     return lado*lado
@@ -26,7 +26,7 @@ class Formas:
     return (math.pow(aresta,3) * math.sqrt(2))/12
 
   def volumeCilindro(raio, altura):
-    return math.pow(raio,2) * math.pi() * altura
+    return math.pow(raio,2) * math.pi * altura
 
   def areaRetangulo(base, altura):
     return base*altura

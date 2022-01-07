@@ -1,43 +1,43 @@
 import unittest
-from formas import forma
+from formas import Formas
 
-class TestFormas(unittest.TestCase):
+class TestFormass(unittest.TestCase):
     def testeAreaCirculo(self):
-        self.assertEqual(706.85, forma.areaCirculo(15), .2)
-        self.assertEqual(201.06, forma.areaCirculo(8), .2)
+        self.assertAlmostEqual(706.85, Formas.areaCirculo(15), 1)
+        self.assertAlmostEqual(201.06, Formas.areaCirculo(8), 1)
 
     def testeVolumeEsfera(self):
-        self.assertEqual(10602.87, forma.volumeEsfera(15), .2)
-        self.assertEqual(551713.93, forma.volumeEsfera(56), .2)
+        self.assertAlmostEqual(14137.16, Formas.volumeEsfera(15), 1)
+        self.assertAlmostEqual(735618.58, Formas.volumeEsfera(56), 1)
 
     def testeAreaQuadrado(self):
-        self.assertEqual(100.0, forma.areaQuadrado(10), .1)
-        self.assertEqual(441.0, forma.areaQuadrado(21), .1)
+        self.assertAlmostEqual(100.0, Formas.areaQuadrado(10), 1)
+        self.assertAlmostEqual(441.0, Formas.areaQuadrado(21), 1)
 
     def testeVolumeCubo(self):
-        self.assertEqual(125.0, forma.volumeCubo(5), .1)
-        self.assertEqual(32768.0, forma.volumeCubo(32), .1)
+        self.assertAlmostEqual(125.0, Formas.volumeCubo(5), 1)
+        self.assertAlmostEqual(32768.0, Formas.volumeCubo(32), 1)
 
     def testeAreaTriangulo(self):
-        self.assertEqual(100.0, forma.areaTriangulo(10,20), .1)
-        self.assertEqual(4.0, forma.areaTriangulo(8,1), .1)
+        self.assertAlmostEqual(100.0, Formas.areaTriangulo(10,20), 1)
+        self.assertAlmostEqual(4.0, Formas.areaTriangulo(8,1), 1)
 
     def testeVolumePiramide(self):
-        self.assertEqual(27.00, forma.volumePiramide(3,9), .2)
-        self.assertEqual(84.00, forma.volumePiramide(6,7), .2)
+        self.assertAlmostEqual(27.00, Formas.volumePiramide(3,9), 1)
+        self.assertAlmostEqual(84.00, Formas.volumePiramide(6,7), 1)
 
     def testeAreaTetraedro(self):
-        self.assertEqual(692.82, forma.areaTetraedro(20), .2)
-        self.assertEqual(140.29, forma.areaTetraedro(9), .2)
+        self.assertAlmostEqual(692.82, Formas.areaTetraedro(20), 1)
+        self.assertAlmostEqual(140.29, Formas.areaTetraedro(9), 1)
 
     def testeVolumeTetraedro(self):
-        self.assertEqual(3181.98, forma.volumeTetraedro(30), .2)
-        self.assertEqual(0.94, forma.volumeTetraedro(2), .2)
+        self.assertAlmostEqual(3181.98, Formas.volumeTetraedro(30), 1)
+        self.assertAlmostEqual(0.94, Formas.volumeTetraedro(2), 1)
 
     def testeVolumeCilindro(self):
-        self.assertEqual(56548.66, forma.volumeCilindro(30,20), .2)
-        self.assertEqual(1407.43, forma.volumeCilindro(8,7), .2)
+        self.assertAlmostEqual(56548.66, Formas.volumeCilindro(30,20), 1)
+        self.assertAlmostEqual(1407.43, Formas.volumeCilindro(8,7), 1)
 
     def testeAreaRetangulo(self):
-        self.assertEqual(600.0, forma.areaRetangulo(20,30), .1)
-        self.assertEqual(16.0, forma.areaRetangulo(8,2), .1)
+        self.assertAlmostEqual(600.0, Formas.areaRetangulo(20,30), 1)
+        self.assertAlmostEqual(16.0, Formas.areaRetangulo(8,2), 1)
